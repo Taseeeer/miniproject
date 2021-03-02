@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: brown;
+        font-family: monospace;
+        color: whitesmoke;
+      }
+
+      h1 {
+        font-size: 2rem;
+        animation: forname 1s infinite;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 10rem;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      ul {
+        display: flex;
+      }
+
+      .header li {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 1rem;
+      }
+
+      .mid {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      img {
+        border-radius: 20%;
+        margin: 5rem 0;
+        width: 55%;
+      }
+
+      .content {
+        font-size: 2rem;
+        margin: 10rem 0;
+        padding: 1.5rem 10rem;
+      }
+      .content ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+      }
+
+      .findme {
+        display: flex;
+        justify-content: center;
+        padding: 0.8rem;
+      }
+
+      .findme img {
+        width: 3%;
+        margin-bottom: -0.5rem;
+        animation: move 1s infinite;
+      }
+
+      footer {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 0.8rem;
+      }
+
+      @keyframes move {
+        0% {
+          transform: rotate(0);
+        }
+
+        50% {
+          transform: rotate(-20deg);
+        }
+        100% {
+          transform: rotate(20deg);
+        }
+      }
+      @keyframes forname {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        50% {
+          transform: rotate(10deg);
+        }
+        100% {
+          transform: rotate(-10deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Taseer</h1>
+      <ul>
+        <li>Home</li>
+        <li>Email</li>
+        <li>Blog</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="mid">
+      <div class="content">
+        <h2>Taseer here!</h2>
+        <ul>
+          <li>Student</li>
+          <li>Developer</li>
+          <li>Gamer</li>
+        </ul>
+      </div>
+
+      <div class="pic">
+        <img src="kakashi.png" />
+      </div>
+    </div>
+
+    <div class="findme">
+      <img src="f.png" />
+      <img src="t.png" />
+      <img src="i.png" />
+    </div>
+    <footer>2021</footer>
+  </body>
+</html>
